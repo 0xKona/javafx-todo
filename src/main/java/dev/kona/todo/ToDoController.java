@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 public class ToDoController {
     @FXML
@@ -29,10 +30,24 @@ public class ToDoController {
     public ListView<String> listView = new ListView<>(tasks);
 
     @FXML
-    protected void removeTask() {
-        System.out.println("Removing task " + taskTitle.getText());
-        listView.getItems().remove(taskTitle.getText());
+    public String selectedTask;
+    public void setSelectedTask(String selectedTask) {
+        this.selectedTask = selectedTask;
     }
+
+    @FXML
+    protected void selectTask(MouseEvent event) {
+        System.out.println("Selected task " + listView.getSelectionModel().getSelectedItem());
+//        listView.getItems().remove(taskTitle.getText());
+        setSelectedTask(listView.getSelectionModel().getSelectedItem());
+    }
+
+    @FXML
+    protected void deleteTask() {
+        listView.getItems().remove(selectedTask);
+    }
+
+
 
     final Label selectedItem = new Label();
 
