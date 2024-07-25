@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56132d52-13ad-43cc-bd22-79b042421d62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kona/todo/ToDoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kona/todo/ToDoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kona/todo/ToDoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kona/todo/ToDoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dev/kona/todo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dev/kona/todo/hello-view.fxml" afterDir="false" />

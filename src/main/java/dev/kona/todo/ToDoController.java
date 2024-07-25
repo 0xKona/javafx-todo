@@ -1,13 +1,12 @@
 package dev.kona.todo;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
 public class ToDoController {
@@ -19,7 +18,6 @@ public class ToDoController {
 
     @FXML
     protected void setTaskTitle() {
-//        taskTitleLabel.setText(String.format("Added: %s", taskTitle.getText()));
         listView.getItems().add(taskTitle.getText());
         taskTitle.setText("");
     }
@@ -38,7 +36,6 @@ public class ToDoController {
     @FXML
     protected void selectTask(MouseEvent event) {
         System.out.println("Selected task " + listView.getSelectionModel().getSelectedItem());
-//        listView.getItems().remove(taskTitle.getText());
         setSelectedTask(listView.getSelectionModel().getSelectedItem());
     }
 
